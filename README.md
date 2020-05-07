@@ -1,4 +1,4 @@
-# Vite Component Test Utils Starter
+# Vite Component Test Starter
 
 Boilerplate for experimental and ad-hoc integration of Vue Test Utils with Vite
 
@@ -8,7 +8,11 @@ Boilerplate for experimental and ad-hoc integration of Vue Test Utils with Vite
 1. Component Driven Development Workflow
 2. Running individual specs one-at-a-time
 
-TODO: Headless mode, In-browser Reporter, queueing multiple specs
+## TODO
+1. Headless mode
+1. In-browser Reporter
+1. queueing multiple specs
+1. Watching entire spec directory
 
 ## Installation
 
