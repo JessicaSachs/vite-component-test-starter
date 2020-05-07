@@ -1,6 +1,6 @@
 # Vite Component Test Starter
 
-Starter for [Vue Test Utils](https://github.com/vuejs/vue-test-utils-next) with [Vite](https://github.com/vuejs/vite)
+⚠️ *EXPERIMENTAL* Starter for [Vue Test Utils](https://github.com/vuejs/vue-test-utils-next) with [Vite](https://github.com/vuejs/vite)
 
 > @vue/test-utils integration with Vue Components served by Vite
 
