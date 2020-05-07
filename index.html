@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>⚡️ Vite + TDD</title>
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css"/>
+  <style>
+    body, html {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  </style>
+</head>
+<body>
+<div id="banner">
+  <h1>
+    ⚡️ Vite Component Test Starter
+  </h1>
+  <p>Head over to <a href="/test/index.html">test/index.html</a> to run your tests</p>
+  <p>Or jump to a specific file by spec name (relative to the test directory)
+  <p><input id="testIdInput" type="text" placeholder="App.spec.js"/>
+    <button onclick="goToTest()">Go!</button>
+  </p>
+  </p>
+  <hr/>
+</div>
+
+<div id="app"></div>
+<script type="module" src="./main.js">
+</script>
+
+<script>
+  window.goToTest = () => {
+    const spec = document.getElementById("testIdInput").value
+    const url = new URL(document.location.href)
+    url.pathname += 'test/index.html'
+    if (spec) {
+      url.searchParams.set('spec', spec)
+    }
+
+    window.open(url)
+  }
+</script>
+</body>
+</html>

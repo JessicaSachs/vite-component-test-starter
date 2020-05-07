@@ -1,0 +1,19 @@
+diff --git a/node_modules/@vue/test-utils/dist/vue-test-utils.esm-bundler.js b/node_modules/@vue/test-utils/dist/vue-test-utils.esm-bundler.js
+index 70d7aa6..b6eaf41 100644
+--- a/node_modules/@vue/test-utils/dist/vue-test-utils.esm-bundler.js
++++ b/node_modules/@vue/test-utils/dist/vue-test-utils.esm-bundler.js
+@@ -6,9 +6,11 @@
+  */
+ 
+ import { nextTick, getCurrentInstance, transformVNodeArgs, h, reactive, defineComponent, createApp } from 'vue';
+-import isString from 'lodash/isString';
+-import mergeWith from 'lodash/mergeWith';
+-import * as eventTypes from 'dom-event-types';
++import isString from 'lodash-es/isString';
++import mergeWith from 'lodash-es/mergeWith';
++import theEventTypes from 'dom-event-types';
++
++const eventTypes = {... theEventTypes.default }
+ 
+ /*! *****************************************************************************
+ Copyright (c) Microsoft Corporation. All rights reserved.
