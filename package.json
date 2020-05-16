@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "@vue/compiler-sfc": "^3.0.0-beta.12",
-    "@vue/test-utils": "^2.0.0-alpha.5",
+    "@vue/test-utils": "^2.0.0-alpha.6",
     "vite": "^0.11.5"
   }
 }
