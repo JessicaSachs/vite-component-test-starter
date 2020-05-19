@@ -1,5 +1,5 @@
 import {getSpecsToRun} from './loader.js'
-import {config} from '@vue/test-utils'
+import { config } from '@vue/test-utils'
 import {DataTestIdPlugin} from './helpers/plugins';
 
 /** Setup, before tests run */
@@ -15,4 +15,15 @@ config.plugins.VueWrapper.install(DataTestIdPlugin)
  * ?specs=Foo.spec.js,App.spec.js
  * ?run=App.spec.js
  */
+
+beforeEach(() => {
+  const existingRoot = document.getElementById('root')
+  if (existingRoot) {
+    existingRoot.innerHTML = ''
+    return
+  }
+  const root = document.createElement('div')
+  root.id = 'root'
+  document.body.appendChild(root)
+})
 export const specs = getSpecsToRun().map(specName => import(`./${specName}`))

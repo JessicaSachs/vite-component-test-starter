@@ -3,7 +3,7 @@ import App from '../App.vue'
 
 describe('App.spec.js', () => {
   it('test button counter increments', async () => {
-    const wrapper = mount(App)
+    const wrapper = mount(App, { attachTo: '#root' })
     const buttonCounterEl = wrapper.findByTestId('button-counter')
     expect(buttonCounterEl.textContent).to.equal('0')
     await wrapper.find('button').trigger('click')
