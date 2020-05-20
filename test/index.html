@@ -9,16 +9,20 @@
     mocha.setup('bdd');
     window.expect = chai.expect
   </script>
+  <div id="mocha"></div>
 </head>
 
 <body>
 <script type="module">
-  import('./index.js').then(({specs}) => {
-    Promise.all(specs).then(() => {
-      mocha.setup({reporter: 'list'})
+  delete window.__VUE_DEVTOOLS_TOAST__
+  import('./helpers').then(async ({specs}) => {
+    const specImports = await specs
+    Promise.all(specImports).then(() => {
+      mocha.setup({reporter: 'html'})
       mocha.checkLeaks()
       mocha.run()
     }).catch((err) => {
+      console.error(err)
       document.body.innerHTML = `${err}
         <p><button onclick="goToTest()">Go to test/index.html</button></p>
         `

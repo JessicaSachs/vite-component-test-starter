@@ -1,5 +1,5 @@
 import {mount} from '@vue/test-utils'
-import App from '../App.vue'
+import App from '../src/App.vue'
 
 describe('App.spec.js', () => {
   it('test button counter increments', async () => {
@@ -10,3 +10,5 @@ describe('App.spec.js', () => {
     expect(buttonCounterEl.textContent).to.equal('1')
   })
 })
+
+

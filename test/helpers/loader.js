@@ -1,8 +1,6 @@
 /** Spec Loader */
 
-export const DEFAULT_SPEC = 'App.spec.js'
-
-export function getSpecsToRun(defaultSpec = DEFAULT_SPEC) {
+export async function getSpecsToRun() {
   const params = new URLSearchParams((document.location.href.split('?'))[1])
 
   // ?spec=App.spec.js
@@ -18,6 +16,9 @@ export function getSpecsToRun(defaultSpec = DEFAULT_SPEC) {
     return acc.concat(curr.split(','))
   }, [])
 
-  if (!allSpecs.length) allSpecs.push(defaultSpec)
-  return allSpecs
+  if (!allSpecs.length) {
+    return fetch('/test-files').then(r => r.json())
+  }
+
+  return Promise.resolve(allSpecs)
 }
