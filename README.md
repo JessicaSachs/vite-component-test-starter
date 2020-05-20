@@ -6,7 +6,7 @@
 
 ## Features
 1. Component Driven Development Workflow
-2. Running individual specs one-at-a-time with `http://localhost:3000/test/index.html?spec=HelloWorld.spec.js`
+2. Running individual specs one-at-a-time with `/test/index.html?spec=HelloWorld.spec.js,App.spec.js`
 
 ## TODO
 - [ ] Headless mode
