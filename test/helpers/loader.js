@@ -13,9 +13,10 @@ export async function getSpecsToRun() {
 
   // handle commas
   const allSpecs = specParams.reduce((acc, curr) => {
-    return acc.concat(curr.split(','))
+    return acc.concat(curr.split(',').map(p => `test/${p}`))
   }, [])
 
+  console.log(allSpecs)
   if (!allSpecs.length) {
     return fetch('/test-files').then(r => r.json())
   }
