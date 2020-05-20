@@ -9,10 +9,10 @@
 2. Running individual specs one-at-a-time
 
 ## TODO
-1. Headless mode
-1. In-browser Reporter
-1. queueing multiple specs
-1. Watching entire spec directory
+- [ ] Headless mode
+- [x] In-browser Reporter
+- [x] queueing multiple specs
+- [ ] Re-run specs on source or spec file update
 
 ## Installation
 
