@@ -9,12 +9,34 @@
     mocha.setup('bdd');
     window.expect = chai.expect
   </script>
-  <div id="mocha"></div>
+  <style>
+    #meta > * {
+      margin: 20px 50px 0 50px;
+      font-weight: 200;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    #meta > h1 { font-size: 2em; }
+    #meta > h2 { font-size: 1.5em; }
+
+    #root {
+      margin: 20px 50px 0 50px;
+    }
+  </style>
 </head>
 
 <body>
+  <div id="meta">
+    <h1>⚡️ Vite Component Test Runner</h1>
+    <h2>Mocha HTML Reporter (<a href="https://mochajs.org/#reporting">link</a>)</h2>
+    <div><div id="mocha" style="margin: 0;"></div></div>
+    <hr/>
+    <h2>Current Spec</h2>
+  </div>
+  <div id="root"></div>
 <script type="module">
   delete window.__VUE_DEVTOOLS_TOAST__
+
   import('./helpers').then(async ({specs}) => {
     const specImports = await specs
     Promise.all(specImports).then(() => {
