@@ -9,7 +9,7 @@
 2. Running individual specs one-at-a-time with `/test/index.html?spec=HelloWorld.spec.js,App.spec.js`
 
 ## TODO
-- [ ] Headless mode
+- [x] Headless mode
 - [x] In-browser Reporter
 - [x] queueing multiple specs
 - [ ] Re-run specs on source or spec file update
@@ -18,8 +18,8 @@
 
 1. Clone this repository
 2. `npm install`
-3. `npm run dev`
-4.  open `/test/index.html` in your browser
+3. `npm run headless` to run your test headless
+
 
 ## Benefits
 
