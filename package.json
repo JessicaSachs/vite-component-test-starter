@@ -4,17 +4,19 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "tdd": "vite --config=./test/vite.config.test.js"
+    "tdd": "vite --config=./test/vite.config.test.js",
+    "headless": "aria-vue --script ./test/plugins.js"
   },
   "dependencies": {
     "vue": "^3.0.0-beta.9"
   },
   "devDependencies": {
     "@types/koa-router": "^7.4.1",
-    "@vue/compiler-sfc": "^3.0.0-beta.9",
+    "@vue/compiler-sfc": "^3.0.0-beta.14",
     "@vue/test-utils": "^2.0.0-alpha.6",
-    "glob": "^7.1.6",
-    "koa-router": "^8.0.8",
-    "vite": "0.16.0"
+    "aria-mocha": "^0.4.0",
+    "aria-vue": "^0.3.1",
+    "puppeteer": "^3.1.0",
+    "vite": "0.16.12"
   }
 }
