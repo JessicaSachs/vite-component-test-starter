@@ -4,8 +4,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "tdd": "vite --config=./test/vite.config.test.js",
-    "headless": "aria-vue --script ./test/plugins.js"
+    "tdd.vite": "vite --config ./test/vite.config.test.js",
+    "tdd": "aria-vue --path test-ui --script ./test/plugins.js",
+    "headless": "aria-vue --headless --script ./test/plugins.js"
   },
   "dependencies": {
     "vue": "^3.0.0-beta.9"
@@ -15,8 +16,8 @@
     "@vue/compiler-sfc": "^3.0.0-beta.14",
     "@vue/test-utils": "^2.0.0-alpha.6",
     "aria-mocha": "^0.4.0",
-    "aria-vue": "^0.3.1",
+    "aria-vue": "^0.3.5",
     "puppeteer": "^3.1.0",
-    "vite": "0.16.12"
+    "vite": "0.17.0"
   }
 }

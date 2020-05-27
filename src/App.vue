@@ -1,10 +1,12 @@
 <template>
-  <h1>Hello Vite + Vue 3!</h1>
-  <p>Edit ./App.vue to test hot module replacement (HMR).</p>
-  <p>
-    <span>Count is: <span data-testid="button-counter">{{ count }}</span></span>
-    <button @click="count++">increment</button>
-  </p>
+  <div>
+    <h1>Hello Vite + Vue 3!</h1>
+    <p>Edit ./App.vue to test hot module replacement (HMR).</p>
+    <p>
+      <span>Count is: <span data-testid="button-counter">{{ count }}</span></span>
+      <button @click="count++">increment</button>
+    </p>
+  </div>
 </template>
 
 <script>

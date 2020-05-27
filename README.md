@@ -18,8 +18,9 @@
 
 1. Clone this repository
 2. `npm install`
-3. `npm run headless` to run your test headless
-
+3. `npm run headless` to run your test in headless
+4. `npm run tdd` to run in tdd mode 
+5. `npm run tdd.vite` to run in tdd mode using vite 
 
 ## Benefits
 
