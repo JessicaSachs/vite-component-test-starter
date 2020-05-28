@@ -1,9 +1,10 @@
-const { testPlugin } = require('aria-vue')
-
-const configureServer = testPlugin({   
-  script: './test/plugins.js'
-})
+const { testPlugin, watchPlugin } = require('aria-vue')
 
 module.exports = {
-  configureServer
+  configureServer: [
+    testPlugin({   
+      script: './test/plugins.js'
+    }),
+    watchPlugin()
+  ]
 }
