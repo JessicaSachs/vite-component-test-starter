@@ -4,7 +4,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "tdd.vite": "vite --config ./test/vite.config.test.js",
+    "tdd:vite": "vite --config ./test/vite.config.test.js",
     "tdd": "aria-vue -w --path test-ui --script ./test/plugins.js",
     "headless": "aria-vue -w -H --script ./test/plugins.js"
   },
