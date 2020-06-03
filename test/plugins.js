@@ -1,4 +1,6 @@
-export const DataTestIdPlugin = (wrapper) => {
+import { config } from '@vue/test-utils'
+
+const DataTestIdPlugin = (wrapper) => {
   function findByTestId(selector) {
     const dataSelector = `[data-testid='${selector}']`
     const element = wrapper.element.querySelector(dataSelector)
@@ -13,3 +15,5 @@ export const DataTestIdPlugin = (wrapper) => {
     findByTestId
   }
 }
+
+config.plugins.VueWrapper.install(DataTestIdPlugin)

@@ -16,7 +16,7 @@
   <h1>
     ⚡️ Vite Component Test Starter
   </h1>
-  <p>Head over to <a href="/test/index.html">test/index.html</a> to run your tests</p>
+  <p>Head over to <a href="/tests">test/index.html</a> to run your tests</p>
   <p>Or jump to a specific file by spec name (relative to the test directory)
   <p><input id="testIdInput" type="text" placeholder="App.spec.js"/>
     <button onclick="goToTest()">Go!</button>
@@ -33,7 +33,7 @@
   window.goToTest = () => {
     const spec = document.getElementById("testIdInput").value
     const url = new URL(document.location.href)
-    url.pathname += 'test/index.html'
+    url.pathname = 'tests'
     if (spec) {
       url.searchParams.set('spec', spec)
     }
