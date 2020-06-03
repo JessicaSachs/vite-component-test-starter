@@ -6,7 +6,8 @@
 
 ## Features
 1. Component Driven Development Workflow
-2. Running individual specs one-at-a-time with `/test/index.html?spec=HelloWorld.spec.js,App.spec.js`
+2. Running individual specs one-at-a-time with `/tests?spec=HelloWorld.spec.js,App.spec.js`
+3. Full customization of runner and plugins provided by [aria-vue](https://github.com/aelbore/aria-vue)
 
 ## TODO
 - [x] Headless mode
@@ -20,7 +21,7 @@
 2. `npm install`
 3. `npm run headless` to run your test in headless
 4. `npm run tdd` to run in tdd mode 
-5. `npm run tdd.vite` to run in tdd mode using vite 
+5. `npm run tdd:vite` to run in tdd mode using vite 
 
 ## Benefits
 
