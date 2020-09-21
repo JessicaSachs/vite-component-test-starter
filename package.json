@@ -9,15 +9,15 @@
     "headless": "aria-vue -w -H --script ./test/plugins.js"
   },
   "dependencies": {
-    "vue": "^3.0.0-beta.14"
+    "vue": "3.0.0"
   },
   "devDependencies": {
     "@types/koa-router": "^7.4.1",
-    "@vue/compiler-sfc": "^3.0.0-beta.14",
-    "@vue/test-utils": "^2.0.0-alpha.6",
-    "aria-mocha": "^0.4.2",
-    "aria-vue": "^0.3.9",
+    "@vue/compiler-sfc": "3.0.0",
+    "@vue/test-utils": "2.0.0-beta.5",
+    "aria-mocha": "0.5.2",
+    "aria-vue": "0.4.1",
     "puppeteer": "^3.2.0",
-    "vite": "0.19.0"
+    "vite": "1.0.0-rc.4"
   }
 }
