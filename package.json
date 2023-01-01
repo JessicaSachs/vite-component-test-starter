@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "@types/koa-router": "^7.4.1",
-    "@vue/compiler-sfc": "3.0.0",
+    "@vue/compiler-sfc": "3.2.45",
     "@vue/test-utils": "2.0.0-beta.5",
     "aria-mocha": "0.5.2",
     "aria-vue": "0.4.1",
